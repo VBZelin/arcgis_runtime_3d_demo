@@ -30,7 +30,7 @@ App {
     height: 600
 
     property real scaleFactor: AppFramework.displayScaleFactor
-    property url dataPath: AppFramework.userHomePath +  "/ArcGIS/Runtime/Data/3D"
+    property url dataPath: fileFolder.url
 
     property int missionSize: currentMissionModel.count
     property bool missionReady: missionSize > 0
@@ -42,6 +42,12 @@ App {
     property string attrFormat: "[%1]"
 
     property Graphic routeGraphic
+
+    FileFolder {
+        id: fileFolder
+
+        url: "Assets"
+    }
 
     /**
      * Create SceneView that contains a Scene with the Imagery Basemap
