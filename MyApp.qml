@@ -95,8 +95,8 @@ App {
 
             ModelSceneSymbol {
                 id: mms
-                url: dataPath + "/Bristol/Collada/Bristol.dae"
-                scale: 10.0
+                url: dataPath + "/Bristol/Obj/Bristol.obj"
+                scale: 0.1
                 heading: 0.0
             }
 
